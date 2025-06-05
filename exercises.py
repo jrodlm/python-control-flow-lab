@@ -231,7 +231,7 @@ def determine_season():
 
 
 # Call the function
-determine_season()
+# determine_season()
 
 
 
@@ -257,22 +257,20 @@ def guess_number():
     # Your control flow logic goes here
 
     target_number = 10
-    guess = input("Guess a number between 1 - 100: ")
-
-    guess = int(guess) 
+   
     guesses = 5 
 
-for guess in guesses: 
-    while guesses > 0:
-        if guess > {target_number}:
+    for num_guess in range(guesses): 
+        guess = input("Guess a number between 1 - 100: ")
+        guess = int(guess) 
+        if guess > target_number:
             print("Guess is too high.")
-        if guess < {target_number}:
+        elif guess < target_number:
             print("Guess is too low.")
-        continue
-            elif guess == {target_number}: 
-        print("Congratulations, you guessed correctly!")
-    if guesses = 0: 
-    print("Sorry, you failed to guess the number in five attempts.")
+        elif guess == target_number: 
+            return print("Congratulations, you guessed correctly!")
+        if  num_guess > 3: 
+            print("Sorry, you failed to guess the number in five attempts.")
 
 
 # Call the function
